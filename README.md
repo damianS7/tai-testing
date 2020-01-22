@@ -1,6 +1,8 @@
-# node-social
-Red social sencilla utilizando Node.js y Express framework como backend y ReactJS como frontend.
+# Laravel-social
+Red social sencilla utilizando Laravel y VUE. 
+
 ## Tecnologia
 - Laravel
-- VueJS/Vuex/VueRouter
+- VueJS/Vuex
+- SPA (VueRouter)
 - WebSockets(Laravel Echo)

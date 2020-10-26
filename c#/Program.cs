@@ -2,27 +2,49 @@
 
 namespace HelloWorldSpace
 {
+    class claseTAI {public int n;}
+    struct structTAI {public int n;}
+    
     class Program
     {
+        static void evalClass (claseTAI ct) { ct.n = 8;} 
+        static void evalStruct (structTAI st) { st.n = 8;}
+            
+        
         static void Main(string[] args)
         {
             //Program2 p = new Program2();
             //p.myn();
             //p.mymethod1();
             
-            Program3 p3 = new Program3();
+            //Program3 p3 = new Program3();
             //p3.getS();
-            Console.WriteLine(p3.myVar.get());
+            //Console.WriteLine(p3.myVar.get());
+            
+            
+            string str = "jaja";
+            int idx = 0;
+            while(idx < str.Length) {
+                // Console.WriteLine(str[idx]);
+                idx++;
+            }
+            
+            
+            claseTAI ct = new claseTAI();
+            structTAI st = new structTAI();
+            ct.n = 5;
+            st.n = 5;
+            
+            evalClass(ct);
+            evalStruct(st);
+            Console.WriteLine("Valor clase: ct.n = {0}", ct.n);
+            Console.WriteLine("Valor struct: st.n = {0}", st.n);
         }
     }
     
     class Program3 : Program2 
     {
-        public int myVar = 99
-        {
-            get { return myVar; }
-            set { myVar = value; }
-        }
+        
         
         public int getS()
         {

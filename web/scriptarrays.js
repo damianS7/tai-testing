@@ -1,8 +1,6 @@
 //alert("Hello");
-const FUERZA = 1;
 var str = "Hello world";
 var arr = ["asdf", "qwer", "vcxs"];
-var str = "xd";
 //console.log(str.length);
 //console.log(str.charAt(0));
 //console.log(str.indexOf("world"));

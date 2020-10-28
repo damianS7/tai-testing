@@ -1,4 +1,5 @@
 <?php
+define ('PORT', 5555);
 
 echo __FILE__;
 echo __LINE__;

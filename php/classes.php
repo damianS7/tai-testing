@@ -24,4 +24,6 @@ class Coche extends Car {
 }
 
 $coche = new Coche();
-$coche->encender();
+//$coche->encender();
+//echo get_class($coche); // Nombre de la clase del objeto
+echo gettype($coche); // Nombre de la clase del objeto

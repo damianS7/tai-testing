@@ -22,5 +22,7 @@ class TestDemo {
 }
 
 
-$demo = new TestDemo();
-$demo->demo1("label3");
+// $demo = new TestDemo();
+// $demo->demo1("label3");
+echo 2.2 - 2;
+echo "2" + " 2.2" . PHP_EOL;

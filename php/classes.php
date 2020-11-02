@@ -23,6 +23,15 @@ class Coche extends Car {
     }
 }
 
+// Clase anonima
+$foo = new class {
+    public function foo() {
+        return "bar";
+    }
+};
+$foo->foo();
+
+
 $coche = new Coche();
 //$coche->encender();
 //echo get_class($coche); // Nombre de la clase del objeto

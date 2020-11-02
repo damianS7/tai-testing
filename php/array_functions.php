@@ -1,5 +1,6 @@
 <?php
 
+$frutas = ['Pera', 'Manzana', 'Platano', 'Cereza'];
 $arr = ['Pera', 'Manzana', 'Platano', 'Cereza'];
 $arr2 = ['Mandarina', 'Pomelo', 'Pera'];
 $arr3 = ['first' => 'David'];
@@ -52,10 +53,12 @@ $chunks = array_chunk($arr, 2) ;
 function cube($n) {
     return($n * $n * $n);
 }
-
 $a = array(1, 2, 3, 4, 5);
 $b = array_map("cube", $a);
 //print_r($b);
+
+$frutasEnMayusculas = array_map( fn($fruta) => strtoupper($fruta), $frutas) );
+
 
 
 // array_search — Busca un valor determinado en un array y devuelve la primera clave correspondiente en caso de éxito
